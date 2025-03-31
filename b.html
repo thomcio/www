@@ -5,7 +5,7 @@
 <tr>
 <td COLSPAN=1 rowspan=1 style="align: center; border: 10px ridge #14A451; border-radius: 40px;  height: 10em;">
   <!-- clock widget start -->
-<iframe
+
  <div id="clockbox"></div>
 
 <script type="text/javascript">
@@ -27,7 +27,7 @@ if(nmin<=9) nmin="0"+nmin;
 var clocktext="<span style=\"font:97pt Arial; color:#ffffff;\">"+nhour+":"+nmin+"</span> <br> <span style=\"font:14pt Arial; color:#ccccff;\">"+tday[nday]+", "+tmonth[nmonth]+" "+ndate+", "+nyear+"</span>";
 document.getElementById('clockbox').innerHTML=clocktext;
 }
-
+<iframe height="200" width="300"
 GetClock();
 setInterval(GetClock,1000);
 </script>
